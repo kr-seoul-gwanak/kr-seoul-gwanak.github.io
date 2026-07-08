@@ -117,35 +117,324 @@
   ]
 }
   </script>
-  <style>
-:root { --fg:#1a1a2e; --muted:#5c5c72; --accent:#2d5bff; --bg:#ffffff; --card:#f6f7fb; --line:#e6e8f0; }
-* { box-sizing: border-box; }
-body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:var(--fg); background:var(--bg); line-height:1.7; }
-main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-header { padding: 2rem 0 1rem; border-bottom: 2px solid var(--line); margin-bottom: 1.5rem; }
-.eyebrow { color: var(--accent); font-weight: 600; margin: 0 0 .25rem; letter-spacing: .02em; }
-h1 { font-size: 2.4rem; margin: 0; }
-h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--accent); }
-section p { margin: .25rem 0 0; }
-ul { margin: .5rem 0 0; padding-left: 1.2rem; }
-li { margin: .25rem 0; }
-.facts, .symbols { list-style: none; padding: 1rem 1.2rem; background: var(--card); border-radius: 12px; }
-.faq details { border: 1px solid var(--line); border-radius: 10px; padding: .5rem .9rem; margin: .5rem 0; }
-.faq summary { cursor: pointer; font-weight: 600; }
-.faq details p { margin: .5rem 0 .25rem; color: var(--muted); }
-.sources { font-size: .9rem; color: var(--muted); }
-a { color: var(--accent); }
-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
-</style>
+  <script id="region-data" type="application/json">
+{
+  "characteristics": "관악구는 면적 29.57제곱킬로미터에 약 48만 명이 사는 서울의 대표적 청년·1인가구 밀집 자치구입니다. 청년 인구 비율이 41퍼센트에 이르러 서울 25개 구 가운데 가장 높고, 세대당 인구는 1.66명으로 서울 최저 수준이어서 원룸과 고시원 중심의 소형 주거 구조가 뚜렷합니다. 산업 기반은 대형 제조업보다 서울대학교와 대학가·고시촌을 축으로 한 교육·학원·임대주거·소상공인 상권에 치우쳐 있으며, 서울대 관악캠퍼스 하나만으로도 구 전체 면적의 약 6분의 1을 차지합니다. 과거 사법고시 준비생이 몰리던 신림동 고시촌은 시험 제도 변화 이후 청년 직장인과 신혼부부, 사회 초년생을 품는 생활촌으로 성격이 바뀌어 가고 있습니다. 봉천·신림 일대의 재개발과 신림선 개통으로 도심 접근성이 개선되면서 강남 출퇴근 수요까지 흡수하는 중입니다. 서민적이고 밀도 높은 주거지에 활력 넘치는 젊은 소비 문화가 겹쳐진 점이 관악구를 규정하는 대표적 성격입니다.",
+  "coords": {
+    "lat": 37.4784,
+    "lng": 126.9516
+  },
+  "cultural_heritage": [
+    {
+      "description": "강감찬 장군의 생가터를 기려 세워진 고려양식 석탑으로 서울특별시 유형문화유산으로 지정되어 있으며, 현재 낙성대공원 안국사 앞으로 옮겨져 보존되고 있습니다.",
+      "name": "낙성대 삼층석탑"
+    },
+    {
+      "description": "1630년(인조 8)에 관악산 자락 바위에 새긴 조선시대 마애불로, 서울특별시 유형문화유산으로 지정된 관악구의 대표적 불교 석조 문화재입니다.",
+      "name": "봉천동 마애미륵불좌상"
+    },
+    {
+      "description": "관악산 남현동 기슭에서 발견된 통일신라~고려시대 도자기 가마터로, 초기 청자 연구에 중요한 유적으로 평가되어 국가지정 사적으로 관리되고 있습니다.",
+      "name": "서울 남현동 요지"
+    },
+    {
+      "description": "1988년 낙성대 인헌제와 1998년 관악산 철쭉제를 통합해 2016년 새롭게 출범한 관악구 대표 축제로, 강감찬 장군의 호국정신을 기리며 21개 동이 참여하는 퍼레이드와 낙성연희 공연이 펼쳐집니다.",
+      "name": "관악강감찬축제"
+    },
+    {
+      "description": "신림동에 자리한 관악문화재단 운영의 복합 문화공간으로, 공연장과 도서관을 갖춰 지역 주민의 문화 향유 거점 역할을 합니다.",
+      "name": "관악아트홀·관악중앙도서관"
+    }
+  ],
+  "faq": [
+    {
+      "answer": "갓(冠)을 세워 놓은 듯한 큰 산(岳)이라는 관악산의 형세에서 따온 이름으로, 뒷산의 모습이 그대로 지명이 되었습니다.",
+      "question": "관악구 이름은 어디에서 유래했나요?"
+    },
+    {
+      "answer": "고려의 명장 강감찬 장군이 태어난 자리로, 그가 태어날 때 하늘에서 큰 별이 떨어졌다는 이야기에서 낙성대라는 이름이 붙었습니다. 현재는 사당 안국사와 동상을 갖춘 공원으로 조성되어 있습니다.",
+      "question": "낙성대는 무엇이고 왜 유명한가요?"
+    },
+    {
+      "answer": "서울대학교와 신림동 고시촌·대학가를 끼고 있어 청년 인구 비율이 41퍼센트로 서울에서 가장 높고, 원룸과 고시원 중심의 1인가구가 밀집해 있기 때문입니다.",
+      "question": "관악구가 청년의 도시로 불리는 이유는 무엇인가요?"
+    },
+    {
+      "answer": "매년 가을 열리는 관악강감찬축제로, 강감찬 장군의 호국정신을 기리며 21개 동이 참여하는 퍼레이드와 낙성연희 주제공연 등이 펼쳐집니다.",
+      "question": "관악구를 대표하는 축제는 무엇인가요?"
+    },
+    {
+      "answer": "지하철 2호선의 낙성대·서울대입구·봉천·신림역이 구를 가로지르고, 2022년 개통한 경전철 신림선이 신림동 안쪽과 서울대 방면까지 연결해 도심 접근성이 크게 좋아졌습니다.",
+      "question": "관악구 지하철 교통은 어떻게 되나요?"
+    },
+    {
+      "answer": "서울대입구·사당역 방면과 관악산역, 낙성대공원 초입 등 여러 들머리가 있으며, 사당역에서 삼성산을 거쳐 석수역으로 이어지는 서울둘레길 코스가 대표적입니다.",
+      "question": "관악산 등산은 어디에서 시작하나요?"
+    }
+  ],
+  "geography_nature": "관악구는 서울 남부 끝자락에 자리하며, 남쪽으로는 해발 632미터의 관악산이 병풍처럼 구 전체를 감싸 안양시·과천시와 경계를 이룹니다. 북쪽은 동작구, 동쪽은 서초구, 서쪽은 금천구·구로구와 맞닿아 있어 한강 본류와는 떨어진 내륙형 자치구입니다. 관악산과 나란히 서쪽으로 삼성산(481미터)이 솟아 있어, 두 산줄기가 만들어 낸 골짜기를 따라 시가지가 계단식으로 오밀조밀하게 형성된 것이 지형상 특징입니다. 산에서 발원한 물줄기는 도림천을 이루어 신림동과 봉천동 일대를 관통하며 북서쪽으로 흘러 안양천으로 합류합니다. 이렇듯 산과 하천 사이의 경사지에 주거지가 밀집한 까닭에 언덕과 계단이 많은 동네 풍경이 곳곳에 남아 있습니다. 관악산과 삼성산은 서울대공원·과천 방면과 이어지는 서울 도심의 대표적 등산 명소로, 자연녹지가 구 면적의 상당 부분을 차지합니다.",
+  "history": "관악구 지역은 삼국시대 이래 한강 이남 교통의 길목이었으며, 조선시대에는 경기도 과천현과 시흥현에 걸쳐 있던 관악산 북쪽 기슭의 마을들이 그 뿌리를 이룹니다. 특히 낙성대는 고려 현종 때 귀주대첩으로 거란을 물리친 명재상 강감찬(948~1031)이 태어난 자리로, 그가 태어날 때 하늘에서 큰 별이 떨어졌다 하여 별이 떨어진 터, 곧 낙성대(落星垈)라 불리게 되었다는 유래가 전합니다. 근대 이후 이 일대는 오랫동안 영등포 관할의 변두리 농촌이었다가, 1970년대 서울로 인구가 몰리면서 봉천동과 신림동을 중심으로 대규모 주거지가 형성되었습니다. 1973년 7월 1일 영등포구에서 노량진동·상도동·봉천동·신림동 등을 떼어 관악구가 신설되었고, 1975년 서울대학교가 관악캠퍼스로 이전해 오면서 대학 도시의 성격이 굳어졌습니다. 1980년 4월 1일에는 한강 쪽 지역이 동작구로 분리되어 오늘날의 구역이 정해졌으며, 이후 봉천동과 신림동은 여러 행정동으로 쪼개져 현재 21개 행정동 체제로 운영되고 있습니다. 1988년 시작된 낙성대 인헌제와 1998년부터 이어진 관악산 철쭉제가 2016년 관악강감찬축제로 통합되며 지역 정체성을 대표하는 문화 자산으로 자리 잡았습니다.",
+  "intro": "관악구는 관악산 자락에 안겨 있는 대학과 청년의 도시로, 서울대학교 관악캠퍼스와 신림동 고시촌이라는 두 상징으로 널리 알려져 있습니다. 구 이름부터 갓(冠)을 세워 놓은 듯한 큰 산(岳)이라는 관악산의 형세에서 비롯되어, 지명 자체가 뒷산의 모습을 그대로 담고 있습니다. 고려의 명장 강감찬이 태어난 낙성대가 이곳에 있어 호국의 고장이라는 자부심도 함께 이어져 오고 있습니다. 봉천동과 신림동을 축으로 하는 밀집된 주거지에는 원룸과 고시원, 다세대주택이 촘촘히 들어차 있어 젊은 세대의 첫 서울살이 관문 역할을 해 왔습니다. 서울대입구역과 신림역 상권, 순대타운, 녹두거리 같은 생활 문화 공간이 어우러져 활기찬 도시의 표정을 만들어 냅니다. 학문과 서민의 삶, 그리고 산과 하천의 자연이 한데 어우러진 것이 관악구만의 개성입니다.",
+  "landmarks": [
+    {
+      "description": "고려 명장 강감찬 장군이 태어난 자리를 성역화한 공원으로, 사당 안국사와 강감찬 장군 동상, 낙성대 삼층석탑이 함께 조성되어 있어 관악구 정체성의 상징으로 꼽힙니다.",
+      "name": "낙성대공원"
+    },
+    {
+      "description": "1975년 이곳으로 이전한 국내 대표 국립대학으로, 관악산 자락에 자리해 구 전체 면적의 약 6분의 1을 차지하며 관악구를 대학 도시로 만든 핵심 랜드마크입니다.",
+      "name": "서울대학교 관악캠퍼스"
+    },
+    {
+      "description": "신림역 사거리 일대에 형성된 순대 특화거리로, 저렴한 가격에 볶음순대를 즐기려는 젊은이들이 몰리는 신림동의 대표 먹거리 명소입니다.",
+      "name": "신림동 순대타운(순대마을)"
+    },
+    {
+      "description": "1980년대 사법고시 준비생의 하숙촌에서 출발한 서울대 앞 대학 상권으로, 고시촌과 녹두거리라는 이름으로 알려진 관악구 청년 문화의 산실입니다.",
+      "name": "대학동 녹두거리·고시촌"
+    }
+  ],
+  "nature_rest": [
+    {
+      "description": "해발 632미터로 구의 남쪽을 감싸는 서울의 대표 명산이며, 사당역에서 삼성산을 거쳐 석수역으로 이어지는 등산로가 서울 시민에게 사랑받는 자연휴식 공간입니다.",
+      "name": "관악산"
+    },
+    {
+      "description": "관악산과 나란히 솟은 해발 481미터의 산으로, 기해박해 순교자 유해가 안장된 삼성산 성지가 있어 등산과 성지 순례를 겸할 수 있는 명소입니다.",
+      "name": "삼성산"
+    },
+    {
+      "description": "관악산에서 발원해 신림·봉천 일대를 관통하는 하천으로, 정비된 수변 산책로와 자전거길이 조성되어 주민들의 일상 휴식과 운동 공간으로 활용됩니다.",
+      "name": "도림천 산책로"
+    },
+    {
+      "description": "강감찬 장군 사당을 중심으로 조성된 도심 근린공원으로, 관악산 등산로 초입과 이어져 산책과 역사 탐방을 함께 즐길 수 있습니다.",
+      "name": "낙성대공원 산책길"
+    },
+    {
+      "description": "사당역에서 관악산과 삼성산을 넘어 석수역에 이르는 서울둘레길 구간으로, 관악구를 대표하는 장거리 트레킹 코스입니다.",
+      "name": "서울둘레길 관악산 코스"
+    }
+  ],
+  "org_slug": "kr-seoul-gwanak",
+  "sido": "서울특별시",
+  "sigungu": "관악구",
+  "symbols": {
+    "bird": "까치",
+    "flower": "철쭉",
+    "tree": "소나무"
+  },
+  "transport": "관악구의 대중교통 중심축은 지하철 2호선으로, 사당 방면에서 넘어오는 낙성대역·서울대입구역·봉천역·신림역이 구를 동서로 가로지르며 강남과 을지로 도심으로 곧장 연결합니다. 특히 서울대입구역과 신림역은 관악구 최대 유동 인구가 몰리는 상권 거점입니다. 2022년 개통한 경전철 신림선은 여의도 샛강에서 관악산까지 이어지며 당곡역·신림역·서원역·서울대벤처타운역·관악산역을 두어, 그동안 지하철 사각지대였던 신림동 안쪽과 서울대 방면의 접근성을 크게 높였습니다. 도로로는 남부순환로가 구를 동서로 관통하고, 남태령을 넘는 과천대로가 과천·안양 방면 관문 역할을 합니다. 서울대와 고시촌을 오가는 5511·5513번 등 지선버스와 관악교통 노선망이 언덕진 주거지 골목까지 촘촘히 연결합니다. 다만 산자락 경사지가 많아 마을버스가 지하철역과 고지대 주택가를 잇는 실핏줄 노릇을 톡톡히 합니다."
+}
+  </script>
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">서울특별시</p>
-      <h1>관악구</h1>
+<!-- 관악구(kr-seoul-gwanak) 전용 템플릿 — "방탈출 Point&Click" 컨셉.
+     방 배경 위에서 돋보기 커서로 문/책상/창/책장/편지/열쇠 등 사물을 클릭하면
+     해당 섹션이 모달로 열립니다.       <section id="intro">
+        <h2>지역 소개</h2>
+        <p>관악구는 관악산 자락에 안겨 있는 대학과 청년의 도시로, 서울대학교 관악캠퍼스와 신림동 고시촌이라는 두 상징으로 널리 알려져 있습니다. 구 이름부터 갓(冠)을 세워 놓은 듯한 큰 산(岳)이라는 관악산의 형세에서 비롯되어, 지명 자체가 뒷산의 모습을 그대로 담고 있습니다. 고려의 명장 강감찬이 태어난 낙성대가 이곳에 있어 호국의 고장이라는 자부심도 함께 이어져 오고 있습니다. 봉천동과 신림동을 축으로 하는 밀집된 주거지에는 원룸과 고시원, 다세대주택이 촘촘히 들어차 있어 젊은 세대의 첫 서울살이 관문 역할을 해 왔습니다. 서울대입구역과 신림역 상권, 순대타운, 녹두거리 같은 생활 문화 공간이 어우러져 활기찬 도시의 표정을 만들어 냅니다. 학문과 서민의 삶, 그리고 산과 하천의 자연이 한데 어우러진 것이 관악구만의 개성입니다.</p>
+      </section>
+      <section id="facts">
+        <h2>주요 통계</h2>
+        <ul class="facts">
+          <li>인구: 약 479,176명 (2024)</li>
+          <li>면적: 29.57 km²</li>
+          <li>신설: 1973-07-01</li>
+        </ul>
+      </section>
+      <section id="history">
+        <h2>역사</h2>
+        <p>관악구 지역은 삼국시대 이래 한강 이남 교통의 길목이었으며, 조선시대에는 경기도 과천현과 시흥현에 걸쳐 있던 관악산 북쪽 기슭의 마을들이 그 뿌리를 이룹니다. 특히 낙성대는 고려 현종 때 귀주대첩으로 거란을 물리친 명재상 강감찬(948~1031)이 태어난 자리로, 그가 태어날 때 하늘에서 큰 별이 떨어졌다 하여 별이 떨어진 터, 곧 낙성대(落星垈)라 불리게 되었다는 유래가 전합니다. 근대 이후 이 일대는 오랫동안 영등포 관할의 변두리 농촌이었다가, 1970년대 서울로 인구가 몰리면서 봉천동과 신림동을 중심으로 대규모 주거지가 형성되었습니다. 1973년 7월 1일 영등포구에서 노량진동·상도동·봉천동·신림동 등을 떼어 관악구가 신설되었고, 1975년 서울대학교가 관악캠퍼스로 이전해 오면서 대학 도시의 성격이 굳어졌습니다. 1980년 4월 1일에는 한강 쪽 지역이 동작구로 분리되어 오늘날의 구역이 정해졌으며, 이후 봉천동과 신림동은 여러 행정동으로 쪼개져 현재 21개 행정동 체제로 운영되고 있습니다. 1988년 시작된 낙성대 인헌제와 1998년부터 이어진 관악산 철쭉제가 2016년 관악강감찬축제로 통합되며 지역 정체성을 대표하는 문화 자산으로 자리 잡았습니다.</p>
+      </section>
+      <section id="geography">
+        <h2>지리·자연환경</h2>
+        <p>관악구는 서울 남부 끝자락에 자리하며, 남쪽으로는 해발 632미터의 관악산이 병풍처럼 구 전체를 감싸 안양시·과천시와 경계를 이룹니다. 북쪽은 동작구, 동쪽은 서초구, 서쪽은 금천구·구로구와 맞닿아 있어 한강 본류와는 떨어진 내륙형 자치구입니다. 관악산과 나란히 서쪽으로 삼성산(481미터)이 솟아 있어, 두 산줄기가 만들어 낸 골짜기를 따라 시가지가 계단식으로 오밀조밀하게 형성된 것이 지형상 특징입니다. 산에서 발원한 물줄기는 도림천을 이루어 신림동과 봉천동 일대를 관통하며 북서쪽으로 흘러 안양천으로 합류합니다. 이렇듯 산과 하천 사이의 경사지에 주거지가 밀집한 까닭에 언덕과 계단이 많은 동네 풍경이 곳곳에 남아 있습니다. 관악산과 삼성산은 서울대공원·과천 방면과 이어지는 서울 도심의 대표적 등산 명소로, 자연녹지가 구 면적의 상당 부분을 차지합니다.</p>
+      </section>
+      <section id="characteristics">
+        <h2>지역 특징</h2>
+        <p>관악구는 면적 29.57제곱킬로미터에 약 48만 명이 사는 서울의 대표적 청년·1인가구 밀집 자치구입니다. 청년 인구 비율이 41퍼센트에 이르러 서울 25개 구 가운데 가장 높고, 세대당 인구는 1.66명으로 서울 최저 수준이어서 원룸과 고시원 중심의 소형 주거 구조가 뚜렷합니다. 산업 기반은 대형 제조업보다 서울대학교와 대학가·고시촌을 축으로 한 교육·학원·임대주거·소상공인 상권에 치우쳐 있으며, 서울대 관악캠퍼스 하나만으로도 구 전체 면적의 약 6분의 1을 차지합니다. 과거 사법고시 준비생이 몰리던 신림동 고시촌은 시험 제도 변화 이후 청년 직장인과 신혼부부, 사회 초년생을 품는 생활촌으로 성격이 바뀌어 가고 있습니다. 봉천·신림 일대의 재개발과 신림선 개통으로 도심 접근성이 개선되면서 강남 출퇴근 수요까지 흡수하는 중입니다. 서민적이고 밀도 높은 주거지에 활력 넘치는 젊은 소비 문화가 겹쳐진 점이 관악구를 규정하는 대표적 성격입니다.</p>
+      </section>
+      <section id="landmarks">
+        <h2>대표 명소</h2>
+        <ul>
+          <li><strong>낙성대공원</strong> — 고려 명장 강감찬 장군이 태어난 자리를 성역화한 공원으로, 사당 안국사와 강감찬 장군 동상, 낙성대 삼층석탑이 함께 조성되어 있어 관악구 정체성의 상징으로 꼽힙니다.</li>
+          <li><strong>서울대학교 관악캠퍼스</strong> — 1975년 이곳으로 이전한 국내 대표 국립대학으로, 관악산 자락에 자리해 구 전체 면적의 약 6분의 1을 차지하며 관악구를 대학 도시로 만든 핵심 랜드마크입니다.</li>
+          <li><strong>신림동 순대타운(순대마을)</strong> — 신림역 사거리 일대에 형성된 순대 특화거리로, 저렴한 가격에 볶음순대를 즐기려는 젊은이들이 몰리는 신림동의 대표 먹거리 명소입니다.</li>
+          <li><strong>대학동 녹두거리·고시촌</strong> — 1980년대 사법고시 준비생의 하숙촌에서 출발한 서울대 앞 대학 상권으로, 고시촌과 녹두거리라는 이름으로 알려진 관악구 청년 문화의 산실입니다.</li>
+        </ul>
+      </section>
+      <section id="heritage">
+        <h2>문화유산·문화시설</h2>
+        <ul>
+          <li><strong>낙성대 삼층석탑</strong> — 강감찬 장군의 생가터를 기려 세워진 고려양식 석탑으로 서울특별시 유형문화유산으로 지정되어 있으며, 현재 낙성대공원 안국사 앞으로 옮겨져 보존되고 있습니다.</li>
+          <li><strong>봉천동 마애미륵불좌상</strong> — 1630년(인조 8)에 관악산 자락 바위에 새긴 조선시대 마애불로, 서울특별시 유형문화유산으로 지정된 관악구의 대표적 불교 석조 문화재입니다.</li>
+          <li><strong>서울 남현동 요지</strong> — 관악산 남현동 기슭에서 발견된 통일신라~고려시대 도자기 가마터로, 초기 청자 연구에 중요한 유적으로 평가되어 국가지정 사적으로 관리되고 있습니다.</li>
+          <li><strong>관악강감찬축제</strong> — 1988년 낙성대 인헌제와 1998년 관악산 철쭉제를 통합해 2016년 새롭게 출범한 관악구 대표 축제로, 강감찬 장군의 호국정신을 기리며 21개 동이 참여하는 퍼레이드와 낙성연희 공연이 펼쳐집니다.</li>
+          <li><strong>관악아트홀·관악중앙도서관</strong> — 신림동에 자리한 관악문화재단 운영의 복합 문화공간으로, 공연장과 도서관을 갖춰 지역 주민의 문화 향유 거점 역할을 합니다.</li>
+        </ul>
+      </section>
+      <section id="nature">
+        <h2>자연·휴식</h2>
+        <ul>
+          <li><strong>관악산</strong> — 해발 632미터로 구의 남쪽을 감싸는 서울의 대표 명산이며, 사당역에서 삼성산을 거쳐 석수역으로 이어지는 등산로가 서울 시민에게 사랑받는 자연휴식 공간입니다.</li>
+          <li><strong>삼성산</strong> — 관악산과 나란히 솟은 해발 481미터의 산으로, 기해박해 순교자 유해가 안장된 삼성산 성지가 있어 등산과 성지 순례를 겸할 수 있는 명소입니다.</li>
+          <li><strong>도림천 산책로</strong> — 관악산에서 발원해 신림·봉천 일대를 관통하는 하천으로, 정비된 수변 산책로와 자전거길이 조성되어 주민들의 일상 휴식과 운동 공간으로 활용됩니다.</li>
+          <li><strong>낙성대공원 산책길</strong> — 강감찬 장군 사당을 중심으로 조성된 도심 근린공원으로, 관악산 등산로 초입과 이어져 산책과 역사 탐방을 함께 즐길 수 있습니다.</li>
+          <li><strong>서울둘레길 관악산 코스</strong> — 사당역에서 관악산과 삼성산을 넘어 석수역에 이르는 서울둘레길 구간으로, 관악구를 대표하는 장거리 트레킹 코스입니다.</li>
+        </ul>
+      </section>
+      <section id="transport">
+        <h2>교통</h2>
+        <p>관악구의 대중교통 중심축은 지하철 2호선으로, 사당 방면에서 넘어오는 낙성대역·서울대입구역·봉천역·신림역이 구를 동서로 가로지르며 강남과 을지로 도심으로 곧장 연결합니다. 특히 서울대입구역과 신림역은 관악구 최대 유동 인구가 몰리는 상권 거점입니다. 2022년 개통한 경전철 신림선은 여의도 샛강에서 관악산까지 이어지며 당곡역·신림역·서원역·서울대벤처타운역·관악산역을 두어, 그동안 지하철 사각지대였던 신림동 안쪽과 서울대 방면의 접근성을 크게 높였습니다. 도로로는 남부순환로가 구를 동서로 관통하고, 남태령을 넘는 과천대로가 과천·안양 방면 관문 역할을 합니다. 서울대와 고시촌을 오가는 5511·5513번 등 지선버스와 관악교통 노선망이 언덕진 주거지 골목까지 촘촘히 연결합니다. 다만 산자락 경사지가 많아 마을버스가 지하철역과 고지대 주택가를 잇는 실핏줄 노릇을 톡톡히 합니다.</p>
+      </section>
+      <section id="symbols">
+        <h2>지역 상징</h2>
+        <ul class="symbols">
+          <li>구화(꽃): 철쭉</li>
+          <li>구목(나무): 소나무</li>
+          <li>구조(새): 까치</li>
+        </ul>
+      </section>
+      <section id="faq">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq">
+          <details>
+            <summary>관악구 이름은 어디에서 유래했나요?</summary>
+            <p>갓(冠)을 세워 놓은 듯한 큰 산(岳)이라는 관악산의 형세에서 따온 이름으로, 뒷산의 모습이 그대로 지명이 되었습니다.</p>
+          </details>
+          <details>
+            <summary>낙성대는 무엇이고 왜 유명한가요?</summary>
+            <p>고려의 명장 강감찬 장군이 태어난 자리로, 그가 태어날 때 하늘에서 큰 별이 떨어졌다는 이야기에서 낙성대라는 이름이 붙었습니다. 현재는 사당 안국사와 동상을 갖춘 공원으로 조성되어 있습니다.</p>
+          </details>
+          <details>
+            <summary>관악구가 청년의 도시로 불리는 이유는 무엇인가요?</summary>
+            <p>서울대학교와 신림동 고시촌·대학가를 끼고 있어 청년 인구 비율이 41퍼센트로 서울에서 가장 높고, 원룸과 고시원 중심의 1인가구가 밀집해 있기 때문입니다.</p>
+          </details>
+          <details>
+            <summary>관악구를 대표하는 축제는 무엇인가요?</summary>
+            <p>매년 가을 열리는 관악강감찬축제로, 강감찬 장군의 호국정신을 기리며 21개 동이 참여하는 퍼레이드와 낙성연희 주제공연 등이 펼쳐집니다.</p>
+          </details>
+          <details>
+            <summary>관악구 지하철 교통은 어떻게 되나요?</summary>
+            <p>지하철 2호선의 낙성대·서울대입구·봉천·신림역이 구를 가로지르고, 2022년 개통한 경전철 신림선이 신림동 안쪽과 서울대 방면까지 연결해 도심 접근성이 크게 좋아졌습니다.</p>
+          </details>
+          <details>
+            <summary>관악산 등산은 어디에서 시작하나요?</summary>
+            <p>서울대입구·사당역 방면과 관악산역, 낙성대공원 초입 등 여러 들머리가 있으며, 사당역에서 삼성산을 거쳐 석수역으로 이어지는 서울둘레길 코스가 대표적입니다.</p>
+          </details>
+        </div>
+      </section>
+      <section id="links">
+        <h2>공식 링크</h2>
+        <ul>
+          <li><a href="https://www.gwanak.go.kr" rel="noopener">관악구청 공식 누리집</a></li>
+          <li><a href="https://www.gwanak.go.kr/site/gwanak/11/11101030000002016051207.jsp" rel="noopener">관악구 면적·인구·기반시설 안내</a></li>
+        </ul>
+      </section>
+      <section id="sources">
+        <h2>출처</h2>
+        <ul class="sources">
+          <li><a href="https://ko.wikipedia.org/wiki/%EA%B4%80%EC%95%85%EA%B5%AC" rel="noopener">관악구 - 위키백과</a> (조회 2026-07-08)</li>
+          <li><a href="https://www.gwanak.go.kr/site/gwanak/11/11101030000002016051207.jsp" rel="noopener">관악구, 면적·인구·기반시설 : 관악구청</a> (조회 2026-07-08)</li>
+          <li><a href="https://www.gwanak.go.kr/site/gwanak/05/10503010100002016051205.jsp" rel="noopener">낙성대공원 : 관악구청</a> (조회 2026-07-08)</li>
+          <li><a href="http://gfac.or.kr/site/main/content/festival01_1" rel="noopener">관악강감찬축제 소개 : 관악문화재단</a> (조회 2026-07-08)</li>
+          <li><a href="https://encykorea.aks.ac.kr/Article/E0066963" rel="noopener">서울특별시 관악구 - 한국민족문화대백과사전</a> (조회 2026-07-08)</li>
+        </ul>
+      </section>의 9섹션 실제 텍스트는
+     .room-content 안에 그대로 DOM에 박혀 크롤링/스크린리더에서 항상 읽힙니다(SEO-safe).
+     JS가 켜지면 그 텍스트를 각 사물 모달로 '이동'시켜 방탈출 인터랙션으로 향상합니다.
+     JS가 꺼지면 방 위에 안내가 뜨고 아래 본문이 정상 노출됩니다(progressive enhancement). -->
+
+<div id="gw-room" class="gw" data-title="관악구 지역 정보 · 서울특별시" data-sido="서울특별시" data-sigungu="관악구">
+
+  <!-- ===== 방탈출 무대 (향상 레이어) ===== -->
+  <div class="gw-stage" aria-hidden="true">
+    <header class="gw-head">
+      <p class="gw-eyebrow">서울특별시</p>
+      <h1 class="gw-title">관악구</h1>
+      <p class="gw-tag">돋보기를 들고 방 안 사물을 클릭해 관악을 탐색하세요 🔍</p>
     </header>
-    <div class="content">
-      <section id="intro">
+
+    <!-- 방 배경: 순수 CSS/SVG 프리폼 일러스트. 각 hotspot = 콘텐츠 섹션 -->
+    <div class="gw-scene" id="gw-scene">
+      <svg class="gw-bg" viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="gwWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f6e6a6"/><stop offset="1" stop-color="#e6d4a0"/>
+          </linearGradient>
+          <linearGradient id="gwFloor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#cbb488"/><stop offset="1" stop-color="#b79f74"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="1000" height="470" fill="url(#gwWall)"/>
+        <rect x="0" y="470" width="1000" height="150" fill="url(#gwFloor)"/>
+        <path d="M0 470 L200 470 L120 620 L0 620 Z" fill="#000" opacity="0.05"/>
+        <path d="M1000 470 L800 470 L880 620 L1000 620 Z" fill="#000" opacity="0.05"/>
+        <!-- 관악산 실루엣이 창밖에 보이는 벽 장식 -->
+        <line x1="0" y1="470" x2="1000" y2="470" stroke="#a98f63" stroke-width="3"/>
+      </svg>
+
+      <!-- 사물(hotspot) 버튼들. 각 버튼은 실제 콘텐츠 섹션으로 매핑됨 -->
+      <button class="gw-obj gw-door"   data-target="intro"        style="--x:6%;  --y:30%; --w:200px;--h:340px;">
+        <span class="gw-shape gw-shape-door"></span><span class="gw-label">문 · 관악의 문을 열다</span></button>
+
+      <button class="gw-obj gw-window" data-target="geography"    style="--x:74%; --y:12%; --w:240px;--h:190px;">
+        <span class="gw-shape gw-shape-window"></span><span class="gw-label">창밖 · 관악산 풍경</span></button>
+
+      <button class="gw-obj gw-desk"   data-target="history"      style="--x:30%; --y:52%; --w:260px;--h:170px;">
+        <span class="gw-shape gw-shape-desk"></span><span class="gw-label">책상 · 오래된 기록</span></button>
+
+      <button class="gw-obj gw-shelf"  data-target="characteristics" style="--x:2%; --y:52%; --w:150px;--h:200px;">
+        <span class="gw-shape gw-shape-shelf"></span><span class="gw-label">책장 · 동네 이야기</span></button>
+
+      <button class="gw-obj gw-clock"  data-target="facts"        style="--x:44%; --y:8%; --w:110px;--h:110px;">
+        <span class="gw-shape gw-shape-clock"></span><span class="gw-label">벽시계 · 한눈 정보</span></button>
+
+      <button class="gw-obj gw-frame"  data-target="landmarks"    style="--x:60%; --y:30%; --w:150px;--h:120px;">
+        <span class="gw-shape gw-shape-frame"></span><span class="gw-label">액자 · 명소</span></button>
+
+      <button class="gw-obj gw-vase"   data-target="nature"       style="--x:88%; --y:56%; --w:90px;--h:150px;">
+        <span class="gw-shape gw-shape-vase"></span><span class="gw-label">화분 · 자연·쉼터</span></button>
+
+      <button class="gw-obj gw-chest"  data-target="heritage"     style="--x:56%; --y:58%; --w:170px;--h:130px;">
+        <span class="gw-shape gw-shape-chest"></span><span class="gw-label">상자 · 문화유산</span></button>
+
+      <button class="gw-obj gw-sign"   data-target="transport"    style="--x:20%; --y:14%; --w:130px;--h:100px;">
+        <span class="gw-shape gw-shape-sign"></span><span class="gw-label">표지판 · 교통</span></button>
+
+      <button class="gw-obj gw-letter" data-target="faq"          style="--x:78%; --y:66%; --w:130px;--h:90px;">
+        <span class="gw-shape gw-shape-letter"></span><span class="gw-label">쪽지 · 자주 묻는</span></button>
+
+      <button class="gw-obj gw-key"    data-target="symbols"      style="--x:40%; --y:66%; --w:90px;--h:70px;">
+        <span class="gw-shape gw-shape-key"></span><span class="gw-label">열쇠 · 상징</span></button>
+
+      <button class="gw-obj gw-note"   data-target="links"        style="--x:12%; --y:70%; --w:120px;--h:80px;">
+        <span class="gw-shape gw-shape-note"></span><span class="gw-label">메모 · 관련 링크</span></button>
+    </div>
+
+    <!-- 진행 표시 (탈출 진행률) -->
+    <div class="gw-progress" aria-hidden="true">
+      <span class="gw-prog-label">탐색한 사물</span>
+      <span class="gw-prog-bar"><span class="gw-prog-fill" id="gw-prog-fill"></span></span>
+      <span class="gw-prog-count" id="gw-prog-count">0 / 12</span>
+    </div>
+  </div>
+
+  <!-- ===== 모달 (사물 클릭 시 섹션이 여기로 들어옴) ===== -->
+  <div class="gw-modal" id="gw-modal" role="dialog" aria-modal="true" aria-labelledby="gw-modal-h" hidden>
+    <div class="gw-modal-card">
+      <button class="gw-modal-x" id="gw-modal-x" aria-label="닫기">✕</button>
+      <div class="gw-modal-body" id="gw-modal-body"></div>
+      <p class="gw-modal-hint">다른 사물도 클릭해 방을 마저 탐색해 보세요.</p>
+    </div>
+  </div>
+
+  <!-- ===== 실제 콘텐츠 (SEO 코어 · 항상 DOM에 존재) =====
+       JS 켜짐: 시각적으로 숨기고 각 섹션을 모달로 대여.
+       JS 꺼짐: 그대로 문서처럼 노출. -->
+  <main class="gw-content" id="gw-content">
+    <p class="gw-fallback">방탈출 인터랙션은 자바스크립트가 켜졌을 때 활성화됩니다. 아래에서 관악구의 모든 정보를 바로 읽으실 수 있습니다.</p>
+          <section id="intro">
         <h2>지역 소개</h2>
         <p>관악구는 관악산 자락에 안겨 있는 대학과 청년의 도시로, 서울대학교 관악캠퍼스와 신림동 고시촌이라는 두 상징으로 널리 알려져 있습니다. 구 이름부터 갓(冠)을 세워 놓은 듯한 큰 산(岳)이라는 관악산의 형세에서 비롯되어, 지명 자체가 뒷산의 모습을 그대로 담고 있습니다. 고려의 명장 강감찬이 태어난 낙성대가 이곳에 있어 호국의 고장이라는 자부심도 함께 이어져 오고 있습니다. 봉천동과 신림동을 축으로 하는 밀집된 주거지에는 원룸과 고시원, 다세대주택이 촘촘히 들어차 있어 젊은 세대의 첫 서울살이 관문 역할을 해 왔습니다. 서울대입구역과 신림역 상권, 순대타운, 녹두거리 같은 생활 문화 공간이 어우러져 활기찬 도시의 표정을 만들어 냅니다. 학문과 서민의 삶, 그리고 산과 하천의 자연이 한데 어우러진 것이 관악구만의 개성입니다.</p>
       </section>
@@ -256,10 +545,285 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
           <li><a href="https://encykorea.aks.ac.kr/Article/E0066963" rel="noopener">서울특별시 관악구 - 한국민족문화대백과사전</a> (조회 2026-07-08)</li>
         </ul>
       </section>
-    </div>
-    <footer>
-      <p>이 페이지는 공개 자료를 바탕으로 작성된 관악구 지역 정보 페이지입니다.</p>
-    </footer>
   </main>
+
+  <footer class="gw-foot">공개 자료를 바탕으로 정리한 서울특별시 관악구 지역 안내 · kr-seoul-gwanak</footer>
+</div>
+
+<style>
+  #gw-room{
+    --paper:#FDEEA0;      /* 메인 컬러 */
+    --sand:#D5C09F;       /* 서브 컬러 */
+    --ink:#4a3b1e;
+    --ink-soft:#6d5a34;
+    --door:#b98a55;
+    --wood:#c9a877;
+    --accent:#8a6d3b;
+    --line:rgba(74,59,30,.18);
+    --hand:'Caveat','Nanum Pen Script','Gaegu',"Apple SD Gothic Neo",cursive;
+    --body:'Nanum Pen Script','Gaegu',"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  }
+  #gw-room *{ box-sizing:border-box; }
+  #gw-room{
+    font-family:var(--body);
+    color:var(--ink);
+    line-height:1.75;
+    background:
+      radial-gradient(1100px 600px at 50% -8%, #fff6cf, transparent 60%),
+      repeating-linear-gradient(45deg, #fdeea0 0 22px, #fbe993 22px 44px);
+    padding:0 0 3rem;
+    margin:0;
+  }
+
+  /* ---------- 무대 ---------- */
+  .gw-stage{ max-width:1040px; margin:0 auto; padding:2.2rem 1rem 0; }
+  .gw-head{ text-align:center; }
+  .gw-eyebrow{ font-family:var(--hand); font-size:1.35rem; letter-spacing:.15em; color:var(--accent); margin:0; transform:rotate(-2deg); }
+  .gw-title{ font-family:var(--hand); font-size:4.4rem; line-height:.95; margin:.1rem 0 .3rem; color:var(--ink);
+    text-shadow:2px 3px 0 var(--sand); }
+  .gw-tag{ font-family:var(--body); font-size:1.15rem; color:var(--ink-soft); margin:.2rem 0 1.2rem; }
+
+  /* 방 씬 */
+  .gw-scene{
+    position:relative; width:100%; aspect-ratio:1000/620;
+    border:6px solid #7c5c2f; border-radius:26px; overflow:hidden;
+    box-shadow:0 24px 50px -20px rgba(74,59,30,.55), inset 0 0 60px rgba(124,92,47,.25);
+    cursor:none;
+  }
+  .gw-bg{ position:absolute; inset:0; width:100%; height:100%; }
+
+  /* 돋보기 커서 */
+  .gw-scene::after{
+    content:''; position:absolute; width:74px; height:74px; left:var(--cx,-200px); top:var(--cy,-200px);
+    transform:translate(-50%,-50%) rotate(35deg); pointer-events:none; z-index:40;
+    border:7px solid #5a3f1c; border-radius:50%;
+    background:radial-gradient(circle at 38% 32%, rgba(255,255,255,.55), rgba(255,255,255,.08) 55%, transparent 70%);
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.4);
+    transition:opacity .2s; opacity:0;
+  }
+  .gw-scene.gw-hover::after{ opacity:1; }
+  .gw-lens-handle{ position:absolute; z-index:39; pointer-events:none; }
+
+  /* 사물 hotspot */
+  .gw-obj{
+    position:absolute; left:var(--x); top:var(--y); width:var(--w); height:var(--h);
+    max-width:34%;
+    background:transparent; border:0; padding:0; margin:0; cursor:none; z-index:20;
+    display:flex; align-items:flex-end; justify-content:center;
+  }
+  .gw-obj:focus-visible{ outline:3px dashed #5a3f1c; outline-offset:4px; border-radius:16px; }
+  .gw-shape{ position:absolute; inset:0; transition:transform .18s ease, filter .18s ease; }
+  .gw-obj:hover .gw-shape,.gw-obj:focus-visible .gw-shape{ transform:scale(1.05) translateY(-3px); filter:drop-shadow(0 8px 14px rgba(74,59,30,.4)); }
+  .gw-obj.gw-seen .gw-shape{ filter:saturate(.6) brightness(1.02); }
+  .gw-label{
+    position:relative; z-index:2; margin-bottom:-1.9rem;
+    font-family:var(--hand); font-size:1.05rem; color:var(--ink);
+    background:var(--paper); border:2px solid var(--ink); padding:.05rem .7rem;
+    border-radius:24px; opacity:0; transform:translateY(6px); transition:.18s; white-space:nowrap;
+    box-shadow:2px 2px 0 var(--sand);
+  }
+  .gw-obj:hover .gw-label,.gw-obj:focus-visible .gw-label{ opacity:1; transform:translateY(0); }
+  .gw-obj.gw-seen .gw-label::after{ content:' ✓'; color:#3f7a3f; }
+
+  /* 사물 형태 (프리폼 CSS 쉐입) */
+  .gw-shape-door{ background:linear-gradient(160deg,var(--door),#a67940); border:5px solid #7c5c2f; border-radius:14px 14px 8px 8px;
+    box-shadow:inset -10px 0 0 rgba(0,0,0,.08); }
+  .gw-shape-door::after{ content:''; position:absolute; right:16%; top:48%; width:14px; height:14px; border-radius:50%; background:#f4d97a; box-shadow:0 0 0 3px #7c5c2f; }
+  .gw-shape-window{ background:linear-gradient(180deg,#bfe0f0,#8fc3dd 55%,#6facc7); border:8px solid #efe0b0; border-radius:12px;
+    box-shadow:inset 0 0 0 3px #7c5c2f; }
+  .gw-shape-window::after{ content:''; position:absolute; inset:0; background:
+      linear-gradient(90deg,transparent 48%,#efe0b0 48% 52%,transparent 52%),
+      linear-gradient(0deg,transparent 48%,#efe0b0 48% 52%,transparent 52%),
+      radial-gradient(120px 60px at 30% 80%, #7fae86 40%, transparent 42%),
+      radial-gradient(160px 80px at 70% 90%, #6f9c78 40%, transparent 42%); }
+  .gw-shape-desk{ background:linear-gradient(180deg,var(--wood),#b08a4e); border-radius:10px; border:4px solid #7c5c2f;
+    box-shadow:inset 0 12px 0 rgba(255,255,255,.15), 0 20px 0 -6px #9c7a44; }
+  .gw-shape-desk::after{ content:''; position:absolute; left:12%; bottom:-40%; width:12px; height:40%; background:#8f6d3c; box-shadow:60px 0 0 #8f6d3c, 180px 0 0 #8f6d3c, 240px 0 0 #8f6d3c; }
+  .gw-shape-shelf{ background:repeating-linear-gradient(180deg,#b58a4d 0 26%,#8f6d3c 26% 30%); border:4px solid #7c5c2f; border-radius:8px; }
+  .gw-shape-clock{ background:radial-gradient(circle at 50% 50%, #fff 60%, var(--sand) 61%); border:6px solid #7c5c2f; border-radius:50%; }
+  .gw-shape-clock::after{ content:''; position:absolute; left:50%; top:50%; width:3px; height:32%; background:var(--ink); transform-origin:bottom; transform:translate(-50%,-100%) rotate(42deg);
+    box-shadow:0 0 0 0 var(--ink); }
+  .gw-shape-frame{ background:#fff8de; border:12px solid #b58a4d; border-radius:8px; box-shadow:0 0 0 3px #7c5c2f;
+    background-image:radial-gradient(60px 50px at 40% 60%,#c9a877 40%,transparent 42%),linear-gradient(120deg,#f6e6a6,#e6d4a0); }
+  .gw-shape-vase{ background:linear-gradient(180deg,#7fae86,#5f8c66); border-radius:50% 50% 40% 40%/30% 30% 70% 70%; border:4px solid #4f6f54; }
+  .gw-shape-vase::after{ content:''; position:absolute; left:50%; top:-30%; width:60%; height:60%; transform:translateX(-50%); border-radius:50% 50% 50% 50%/60% 60% 40% 40%; background:radial-gradient(#a9d4b0,#7fae86); }
+  .gw-shape-chest{ background:linear-gradient(180deg,#c79a57,#a67a3f); border:4px solid #7c5c2f; border-radius:14px 14px 8px 8px; box-shadow:inset 0 8px 0 rgba(255,255,255,.12); }
+  .gw-shape-chest::after{ content:'🔒'; position:absolute; left:50%; top:52%; transform:translate(-50%,-50%); font-size:1.4rem; }
+  .gw-shape-sign{ background:#e8c96f; border:4px solid #7c5c2f; border-radius:10px; box-shadow:0 30px 0 -12px #8f6d3c; }
+  .gw-shape-sign::after{ content:'관악'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--hand); font-size:1.5rem; color:var(--ink); }
+  .gw-shape-letter{ background:#fffbe8; border:2px solid #b58a4d; border-radius:6px; transform:rotate(-4deg); box-shadow:2px 3px 0 rgba(74,59,30,.2); }
+  .gw-shape-letter::after{ content:''; position:absolute; inset:0; background:linear-gradient(#0000 30%, #b58a4d 30% 32%, #0000 32%),linear-gradient(#0000 50%, #b58a4d 50% 52%, #0000 52%),linear-gradient(#0000 70%, #b58a4d 70% 72%, #0000 72%); opacity:.5; }
+  .gw-shape-key{ background:transparent; }
+  .gw-shape-key::after{ content:'🔑'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:2.2rem; transform:rotate(-15deg); }
+  .gw-shape-note{ background:#f6e6a6; border:2px solid #b58a4d; border-radius:4px; transform:rotate(3deg); box-shadow:2px 2px 0 rgba(74,59,30,.2); }
+  .gw-shape-note::after{ content:'✎ 링크'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--hand); font-size:1.1rem; color:var(--ink-soft); }
+
+  /* 진행률 */
+  .gw-progress{ display:flex; align-items:center; gap:.6rem; justify-content:center; margin:1rem 0 0; font-family:var(--hand); font-size:1.2rem; color:var(--ink); flex-wrap:wrap; }
+  .gw-prog-bar{ width:min(280px,60vw); height:14px; background:var(--sand); border:2px solid var(--ink); border-radius:24px; overflow:hidden; }
+  .gw-prog-fill{ display:block; height:100%; width:0; background:linear-gradient(90deg,#d8a94f,#8a6d3b); transition:width .4s ease; }
+
+  /* ---------- 모달 ---------- */
+  .gw-modal{ position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; padding:1.2rem;
+    background:rgba(50,38,14,.55); backdrop-filter:blur(3px); }
+  .gw-modal[hidden]{ display:none; }
+  .gw-modal-card{ position:relative; width:min(680px,100%); max-height:86vh; overflow:auto; background:var(--paper);
+    border:5px solid var(--ink); border-radius:26px; padding:2rem 1.8rem 1.4rem; box-shadow:8px 10px 0 var(--sand);
+    animation:gwPop .28s cubic-bezier(.2,1.4,.4,1); }
+  @keyframes gwPop{ from{ transform:scale(.85) translateY(14px); opacity:0; } to{ transform:none; opacity:1; } }
+  .gw-modal-x{ position:absolute; top:.8rem; right:.9rem; width:40px; height:40px; border-radius:50%; border:3px solid var(--ink);
+    background:var(--sand); font-size:1.1rem; cursor:pointer; font-weight:700; color:var(--ink); }
+  .gw-modal-x:hover{ background:var(--paper); }
+  .gw-modal-hint{ font-family:var(--hand); font-size:1.15rem; color:var(--ink-soft); text-align:center; margin:1rem 0 .2rem; border-top:2px dashed var(--line); padding-top:.8rem; }
+
+  /* ---------- 콘텐츠 공통 (모달 & 폴백 모두 상속) ---------- */
+  .gw-content, .gw-modal-body{ font-size:1.12rem; }
+  .gw-content{ max-width:820px; margin:1.6rem auto 0; padding:0 1.2rem; }
+  .gw-fallback{ font-family:var(--hand); font-size:1.3rem; text-align:center; background:var(--paper); border:3px dashed var(--ink);
+    border-radius:24px; padding:.7rem 1rem; color:var(--ink-soft); }
+
+  #gw-content section, .gw-modal-body section{
+    background:rgba(255,255,255,.5); border:2px solid var(--line); border-left:7px solid var(--accent);
+    border-radius:18px; padding:1.2rem 1.4rem; margin:1.1rem 0;
+  }
+  .gw-modal-body section{ margin:0; background:transparent; border:0; padding:0; }
+  #gw-content h2, .gw-modal-body h2{ font-family:var(--hand); font-size:2.1rem; color:var(--ink); margin:0 0 .5rem; }
+  #gw-content p, .gw-modal-body p{ margin:.3rem 0; color:var(--ink-soft); }
+  #gw-content a, .gw-modal-body a{ color:var(--accent); text-underline-offset:3px; text-decoration-thickness:2px; }
+  #gw-content ul, .gw-modal-body ul{ margin:.4rem 0; padding-left:1.2rem; }
+  #gw-content li, .gw-modal-body li{ margin:.3rem 0; }
+  #gw-content li strong, .gw-modal-body li strong{ color:var(--accent); }
+
+  .gw-content .facts, .gw-content .symbols,
+  .gw-modal-body .facts, .gw-modal-body .symbols{
+    list-style:none; padding:1rem 1.2rem; background:var(--sand);
+    border:2px dashed var(--ink); border-radius:16px; display:flex; flex-wrap:wrap; gap:.4rem 1.6rem;
+  }
+  .gw-content .faq details, .gw-modal-body .faq details{ border-bottom:2px dashed var(--line); padding:.5rem 0; }
+  .gw-content .faq summary, .gw-modal-body .faq summary{ cursor:pointer; font-family:var(--hand); font-size:1.35rem; color:var(--ink); }
+  .gw-content .faq details p, .gw-modal-body .faq details p{ margin:.4rem 0; }
+  .gw-content .sources, .gw-modal-body .sources{ font-size:.95rem; color:var(--ink-soft); }
+
+  .gw-foot{ text-align:center; margin-top:2.4rem; color:var(--ink-soft); font-family:var(--hand); font-size:1.15rem;
+    border-top:2px dashed var(--line); padding-top:1.2rem; max-width:820px; margin-left:auto; margin-right:auto; }
+
+  /* JS 켜졌을 때: 무대 노출 + 코어 콘텐츠는 접근성 유지하며 시각적으로만 숨김 */
+  #gw-room.gw-js .gw-stage{ display:block; }
+  #gw-room.gw-js .gw-content.gw-hidden{
+    position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+    clip:rect(0 0 0 0); white-space:nowrap; border:0;
+  }
+  /* JS 꺼졌을 때: 무대는 감추고 콘텐츠 전체 노출 (기본값은 무대 숨김) */
+  .gw-stage{ display:none; }
+
+  @media (max-width:640px){
+    .gw-title{ font-size:3rem; }
+    .gw-scene{ cursor:pointer; }
+    .gw-scene::after{ display:none; }
+    .gw-obj{ cursor:pointer; }
+    .gw-label{ font-size:.85rem; opacity:1; transform:none; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .gw-modal-card{ animation:none; } .gw-shape{ transition:none; }
+  }
+</style>
+
+<script>
+(function(){
+  var root = document.getElementById('gw-room');
+  if(!root) return;
+  root.classList.add('gw-js');
+
+  var stage   = root.querySelector('.gw-stage');
+  var scene   = document.getElementById('gw-scene');
+  var content = document.getElementById('gw-content');
+  var modal   = document.getElementById('gw-modal');
+  var mBody   = document.getElementById('gw-modal-body');
+  var mHead   = 'gw-modal-h';
+  var closeBtn= document.getElementById('gw-modal-x');
+  var progFill= document.getElementById('gw-prog-fill');
+  var progCnt = document.getElementById('gw-prog-count');
+
+  if(stage) stage.setAttribute('aria-hidden','false');
+  content.classList.add('gw-hidden');
+
+  // data-target -> 실제 섹션 id 매핑 (콘텐츠 계약의 id 사용)
+  var MAP = {
+    intro:'intro', facts:'facts', history:'history', geography:'geography',
+    characteristics:'characteristics', landmarks:'landmarks', heritage:'heritage',
+    nature:'nature', transport:'transport', symbols:'symbols', faq:'faq', links:'links'
+  };
+
+  var objs = Array.prototype.slice.call(root.querySelectorAll('.gw-obj'));
+  var seen = {}; var total = objs.length; var lastActive = null;
+
+  // 각 섹션을 이름표로 라벨링
+  function findSection(id){
+    var el = content.querySelector('#'+CSS.escape(id));
+    if(el) return el;
+    // 대체: 클래스 기반 탐색 (facts/symbols/faq 등)
+    return content.querySelector('.'+id) || content.querySelector('#'+id) || null;
+  }
+
+  function openObj(btn){
+    var key = btn.getAttribute('data-target');
+    var id  = MAP[key] || key;
+    var sec = findSection(id);
+    if(!sec){
+      // 매핑 섹션이 없으면 사용 가능한 첫 섹션 안내
+      mBody.innerHTML = '<section><h2 id="'+mHead+'">준비 중</h2><p>이 사물에 연결된 정보를 찾지 못했습니다. 다른 사물을 눌러보세요.</p></section>';
+    } else {
+      // 섹션 노드를 복제하여 모달에 노출 (원본은 DOM에 그대로 유지 → SEO/접근성 보존)
+      mBody.innerHTML = '';
+      var clone = sec.cloneNode(true);
+      // 접근성: 모달 제목 연결
+      var h = clone.querySelector('h2');
+      if(h){ h.id = mHead; } else { clone.setAttribute('aria-label', btn.textContent.trim()); }
+      mBody.appendChild(clone);
+    }
+    lastActive = btn;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+
+    // 방탈출 진행 표시
+    if(!seen[key]){ seen[key] = true; btn.classList.add('gw-seen'); updateProg(); }
+  }
+
+  function closeModal(){
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    if(lastActive) lastActive.focus();
+  }
+
+  function updateProg(){
+    var n = Object.keys(seen).length;
+    progCnt.textContent = n + ' / ' + total;
+    progFill.style.width = Math.round(n/total*100) + '%';
+    if(n === total){
+      progCnt.textContent = '탈출 성공! 모든 사물을 탐색했습니다 🗝';
+    }
+  }
+
+  objs.forEach(function(b){
+    b.addEventListener('click', function(){ openObj(b); });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+  // 돋보기 커서 추적
+  if(scene && window.matchMedia && !window.matchMedia('(max-width:640px)').matches){
+    scene.addEventListener('mousemove', function(e){
+      var r = scene.getBoundingClientRect();
+      scene.style.setProperty('--cx', (e.clientX - r.left) + 'px');
+      scene.style.setProperty('--cy', (e.clientY - r.top) + 'px');
+    });
+    scene.addEventListener('mouseenter', function(){ scene.classList.add('gw-hover'); });
+    scene.addEventListener('mouseleave', function(){ scene.classList.remove('gw-hover'); });
+  }
+})();
+</script>
 </body>
 </html>
